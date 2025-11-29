@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Fired Up Slice Co.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <div class="logo-mark">
+        <div class="logo-icon"></div>
+        <div class="logo-text">
+          <span class="name">FIRED UP SLICE CO.</span>
+          <span class="tagline">Wood-fired neighborhood pizza</span>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="specials.html">Specials</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html" class="nav-cta">Visit &amp; Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container section">
+      <div class="section-header">
+        <p class="section-kicker">Our Story</p>
+        <h1 class="section-title">Hot Oven, Local Crowd.</h1>
+        <p class="section-subtitle">
+          Fired Up Slice Co. started with a simple idea: serve really good
+          pizza to the people we hang out with every day.
+        </p>
+      </div>
+
+      <div class="info-grid info-grid-2">
+        <div class="info-block">
+          <h3>Neighborhood First.</h3>
+          <p>
+            We’re not a chain and we like it that way. We know our regulars
+            by name, we remember your usual, and we’re here after the game,
+            after work, and after midnight cravings.
+          </p>
+          <p>
+            From the music we play to the art on the walls, everything is
+            built to feel like your spot — not some corporate rollout.
+          </p>
+          <img src="images/neighborhood.jpg" alt="Neighborhood crowd" class="about-img">
+        </div>
+        <div class="info-block">
+          <h3>What We Care About.</h3>
+
+          <p>
+            Fresh dough, hot ovens, and a crew that actually loves what
+            they’re making. We mix our dough in-house, grab produce from
+            local suppliers when we can, and keep the menu tight so
+            everything stays dialed in.
+          </p>
+          <img src="images/pizza-staff.jpg" alt="Our team making pizza" class="about-img">
+  <p></p>
+          <div class="tag-row">
+            <span class="tag">Fresh dough daily</span>
+            <span class="tag">Wood-fired bake</span>
+            <span class="tag">Local ingredients</span>
+            <span class="tag">Vegan &amp; veggie options</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Fired Up Slice Co. All rights reserved.</p>
+      <p>123 Main Street, YourTown, USA &bull; (555) 555-0123</p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector(".nav-toggle");
+    const mainNav = document.querySelector(".main-nav");
+    navToggle.addEventListener("click", () => {
+      mainNav.classList.toggle("open");
+    });
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

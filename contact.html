@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visit & Contact | Fired Up Slice Co.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <div class="logo-mark">
+        <div class="logo-icon"></div>
+        <div class="logo-text">
+          <span class="name">FIRED UP SLICE CO.</span>
+          <span class="tagline">Wood-fired neighborhood pizza</span>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="specials.html">Specials</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="nav-cta active">Visit &amp; Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container section">
+      <div class="section-header">
+        <p class="section-kicker">Visit &amp; Contact</p>
+        <h1 class="section-title">Swing By or Reach Out.</h1>
+        <p class="section-subtitle">
+          Call in a pie, drop by for slices, or hit us up with catering
+          questions. Either way, we’ve got something hot waiting.
+        </p>
+      </div>
+
+      <div class="info-grid info-grid-2">
+        <div class="info-block">
+          <h3>Find Us.</h3>
+          <p>
+            <strong>Fired Up Slice Co.</strong><br />
+            123 Main Street<br />
+            YourTown, USA
+          </p>
+          <h3>Hours.</h3>
+          <ul class="hours-list">
+            <li><strong>Mon–Thu:</strong> 11am – 10pm</li>
+            <li><strong>Fri–Sat:</strong> 11am – 12am</li>
+            <li><strong>Sun:</strong> 12pm – 9pm</li>
+          </ul>
+<img src="images/location .jpg" alt="Map location" class="location-img">
+
+          <h3 style="margin-top: 1.5rem;">Call or Email.</h3>
+          <p>
+            📞 <strong>(555) 555-0123</strong><br />
+            ✉️ <strong>hello@firedupslice.com</strong>
+          </p>
+        </div>
+
+        <div class="form-card">
+          <h3>Send Us a Message.</h3>
+          <p class="section-subtitle">
+            Ask about large orders, events, or anything else. We’ll get
+            back as soon as we’re out of the oven.
+          </p>
+
+          <form>
+            <div class="form-row">
+              <input type="text" placeholder="Name" required />
+            </div>
+            <div class="form-row">
+              <input type="email" placeholder="Email" required />
+            </div>
+            <div class="form-row">
+              <textarea rows="4" placeholder="Tell us what you need..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" disabled>
+              Send (demo only)
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Fired Up Slice Co. All rights reserved.</p>
+      <p>123 Main Street, YourTown, USA &bull; (555) 555-0123</p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector(".nav-toggle");
+    const mainNav = document.querySelector(".main-nav");
+    navToggle.addEventListener("click", () => {
+      mainNav.classList.toggle("open");
+    });
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
