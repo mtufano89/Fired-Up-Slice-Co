@@ -537,6 +537,10 @@ textarea:focus {
     align-items: center;
     padding: 0.75rem 0;
 }
+.logo img:hover {
+    transform: scale(1.05);
+    transition: 0.15s ease;
+}
 
 
 /* =======================================
@@ -618,6 +622,7 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
