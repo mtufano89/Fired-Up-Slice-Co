@@ -528,7 +528,7 @@ textarea:focus {
 
 @media (max-width: 768px) {
     .logo img {
-        height: 60px;
+        height: 75px;
     }
 }
 .nav-inner {
@@ -622,6 +622,7 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
