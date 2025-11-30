@@ -513,6 +513,20 @@ textarea:focus {
   box-shadow: 0 0 0 1px rgba(244, 180, 0, 0.4);
 }
 
+/* Logo in Navbar */
+.logo img {
+    height: 46px;         /* Adjust size here */
+    width: auto;
+    display: block;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+
+
 /* =======================================
    Footer
    ======================================= */
@@ -592,3 +606,4 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 }
+
