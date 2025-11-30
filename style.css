@@ -515,7 +515,7 @@ textarea:focus {
 
 /* Logo in Navbar */
 .logo img {
-    height: 46px;         /* Adjust size here */
+    height: 60px;         /* Adjust size here */
     width: auto;
     display: block;
 }
@@ -622,6 +622,7 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
